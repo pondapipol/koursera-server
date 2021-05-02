@@ -1,12 +1,9 @@
 {
+  "name": "default",
   "type": "postgres",
-  "host": "localhost",
-  "port": 5432,
-  "username": "postgres",
-  "password": "6987",
-  "database": "koursera",
-  "synchronize": true,
-  "logging": false,
+  "url: "postgres://username:password@hostname:5432/databasename"
+  "synchronize": false,
+  "logging": true,
   "entities": ["src/entity/**/*.ts"],
   "migrations": ["src/migration/**/*.ts"],
   "subscribers": ["src/subscriber/**/*.ts"],
